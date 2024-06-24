@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+/*@font-face {
+  font-family: ptser;
+  src: url(../css/PTSerif-Regular.ttf);
+}*/
+/* nav {
+  width: 1280px;
+  height: 90px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  border-bottom: solid 2px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+} */
+
+nav {
+  width: 1280px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* -webkit-transform: translate(, 100%);
+  transform: translate(0, 0); */
+  border-bottom: solid 2px #fc5000;
+}
+
+nav .links {
+  width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+nav .links a {
+  text-decoration: none;
+  color: #00879e;
+}
+nav .links :hover {
+  color: #fc5000;
+}
+
+.hero {
+  height: 668px;
+  /* background-color: yellow; */
+  margin: 0 auto;
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(223, 133, 13, 0.7),
+      rgba(223, 133, 13, 0.7)
+    ),
+    url(../images/abstracthero.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 90px;
+}
+
+.hero .hero-title {
+  padding-top: 330px;
+}
+
+.title-f {
+  font-size: 32px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 630px;
+}
+
+.featured {
+  max-width: 980px;
+  min-height: 378px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.featured .featured-artwork {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: thin;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: red; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+.featured p {
+  width: 878px;
+  /* margin-top: 50px; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  max-width: 1680px;
+  min-height: 378px;
+  margin: 0 auto 0 auto;
+  margin-top: 50px;
+}
+
+.gallery-images {
+  margin-top: 50px;
+}
+
+.gallery-images div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rowone {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.imageone {
+  width: 400px;
+  height: 359.03px;
+  background-image: url(../images/featured_one.jpg);
+}
+
+.imagetwo {
+  width: 400px;
+  height: 359.03px;
+  background-image: url(../images/featured_two.jpg);
+}
+
+.imagethree {
+  width: 400px;
+  height: 359.03px;
+  background-image: url(../images/featured_three.jpg);
+}
+
+@media (max-width: 944px) {
+  .rowone {
+    display: block;
+  }
+
+  .rowone div {
+    margin: 0 auto 20px auto;
+    width: 800px;
+  }
+}
+
+@media (max-width: 806px) {
+  .rowone div {
+    width: 600px;
+  }
+}
+
+footer {
+  height: 556px;
+  background-color: #00879e;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* -webkit-box-align: center; */
+  /* -ms-flex-align: center; */
+  /* align-items: center; */
+}
+footer .footer-wrap {
+  width: 300px;
+  height: 100px;
+  /* background-color: cadetblue; */
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 600px;
+  padding-top: 90px;
+}
+footer .adress {
+  width: 300px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-style: italic;
+  /* margin-top: -100px; */
+  margin: 0 auto;
+  display: flex;
+}
+footer .number {
+  width: 250px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-style: italic;
+  margin-top: 20px;
+  /* background-color: #fc5000; */
+  margin-left: 70px;
+}
+footer .email {
+  /* width: 700px; */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-style: italic;
+  margin-top: 20px;
+  /* background-color: aqua; */
+  margin-left: 30px;
+}
+
+footer .signup {
+  height: 30px;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  /* -webkit-box-pack: justify; */
+  /* -ms-flex-pack: justify; */
+  /* justify-content: space-between; */
+  /* -webkit-box-align: center; */
+  /* -ms-flex-align: center; */
+  /* align-items: center; */
+  /* padding-right: 600px; */
+  /* margin-left: -500px; */
+  /* margin: 0 auto; */
+  margin-top: 150px;
+  margin-left: 450px;
+}
+footer .signup input {
+  height: 30px;
+  width: 500px;
+  background-color: #8cc9d3;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  /* padding-left: 15px; */
+}
+
+footer .signup .button {
+  height: 30px;
+  width: 150px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 30px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.f-imgs {
+  width: 300px;
+  height: 50px;
+  /* background-color: cadetblue; */
+  margin: 0 auto;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  margin-left: 600px;
+  padding-top: 50px;
+}
+
+.f-imgs .fb {
+  background-image: url(../images/facebook_w.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.f-imgs .in {
+  background-image: url(../images/instagram.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.f-imgs .twt {
+  background-image: url(../images/twitter_w.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
